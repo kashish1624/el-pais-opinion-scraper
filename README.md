@@ -48,6 +48,7 @@ It performs:
 4. Install dependencies: pip install -r requirements.txt 
 5. Run locally: python main.py 
 
+---
 
 ## ☁️ Run on BrowserStack
 

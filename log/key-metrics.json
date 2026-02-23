@@ -1,9 +1,9 @@
 [
     {
-        "duration": 1442.748046875,
+        "duration": 783.5458984375,
         "name": "sdk:sendFunnelTestCompleted",
-        "startTime": 1771873625966.7666,
-        "worker": "17800-24248",
+        "startTime": 1771880230875.3882,
+        "worker": "15212-26148",
         "status": true,
         "failure": null,
         "details": null,
@@ -15,10 +15,10 @@
         "cli": false
     },
     {
-        "duration": 1453.975341796875,
+        "duration": 786.947265625,
         "name": "sdk:exit-handler",
-        "startTime": 1771873625962.7312,
-        "worker": "3884-24248",
+        "startTime": 1771880230871.9868,
+        "worker": "17800-26148",
         "status": true,
         "failure": null,
         "details": null,
