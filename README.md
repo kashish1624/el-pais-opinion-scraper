@@ -38,21 +38,16 @@ It performs:
 
 ---
 
-## 🖥️ Run Locally
+### 🖥️ Run Locally
 
-### 1️⃣ Install dependencies
+## Setup Instructions 
 
-```bash
-pip install -r requirements.txt
-```
+1. Clone the repository 
+2. Create virtual environment: python -m venv venv 
+3. Activate: venv\Scripts\activate (Windows) 
+4. Install dependencies: pip install -r requirements.txt 
+5. Run locally: python main.py 
 
-### 2️⃣ Run script
-
-```bash
-python main.py
-```
-
----
 
 ## ☁️ Run on BrowserStack
 
