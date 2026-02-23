@@ -99,17 +99,14 @@ This ensures flexibility and environment independence.
 
 ---
 
-## 📂 Images
+## 📂 Output Artifacts
 
-Downloaded images are stored in:
-
-```
-/images
-```
+- Extracted article details are printed in the console.
+- Translated English titles are used for word frequency analysis.
+- Downloaded images are stored inside the `/images` directory.
 
 ---
 
-## 👨‍💻 Author
+## 🏁 Conclusion
 
-Kashish Gupta  
-Automation & Software Enthusiast
+This project demonstrates end-to-end web automation including dynamic content extraction, cloud-based parallel execution, translation processing, and structured result analysis using Selenium and BrowserStack.
