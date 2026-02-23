@@ -1,5 +1,5 @@
-userName: kashisgupta_Pn7AR2
-accessKey: ry4X5ZP3Mrvem94d6Pjz
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
 
 framework: selenium
 

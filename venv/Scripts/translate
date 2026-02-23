@@ -1,4 +1,4 @@
-#!C:\Users\Rohit\OneDrive\Desktop\browserstack-el-pais\venv\Scripts\python.exe
+#!C:\Users\Rohit\OneDrive\Desktop\el-pais-opinion-scraper\venv\Scripts\python.exe
 # -*- coding: utf-8 -*-
 import argparse
 import sys
