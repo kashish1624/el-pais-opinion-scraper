@@ -1,0 +1,35 @@
+userName: kashisgupta_Pn7AR2
+accessKey: ry4X5ZP3Mrvem94d6Pjz
+
+framework: selenium
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+
+  - os: Windows
+    osVersion: 10
+    browserName: Firefox
+    browserVersion: latest
+
+  - os: OS X
+    osVersion: Ventura
+    browserName: Safari
+    browserVersion: latest
+
+  - deviceName: Samsung Galaxy S22
+    osVersion: 12.0
+    browserName: chrome
+
+  - deviceName: iPhone 14
+    osVersion: 16
+    browserName: safari
+
+parallelsPerPlatform: 1
+
+browserstackLocal: false
+buildName: elpais-assignment
+buildIdentifier: ${BUILD_NUMBER}
+projectName: elpais-scraper
