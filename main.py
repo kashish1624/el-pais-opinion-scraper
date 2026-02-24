@@ -46,6 +46,9 @@ translated_titles = []
 
 os.makedirs("images", exist_ok=True)
 
+# Session Status Tracking
+test_status = "passed"
+test_reason = "Execution completed successfully"
 
 try:
     # ==========================================================
@@ -126,6 +129,8 @@ try:
 
         except Exception as e:
             print(f"[ERROR] Failed processing article {index+1}: {e}")
+            test_status = "failed"
+            test_reason = f"Article processing failed: {e}"
 
 
     # ==========================================================
@@ -160,7 +165,17 @@ try:
 
 except Exception as main_error:
     print(f"[FATAL ERROR] {main_error}")
+    test_status = "failed"
+    test_reason = str(main_error)
+
 
 finally:
+    # Set BrowserStack Session Status
+    if os.getenv("BROWSERSTACK_HUB_URL"):
+        driver.execute_script(
+            'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"%s","reason": "%s"}}'
+            % (test_status, test_reason)
+        )
+
     driver.quit()
     print("\nExecution Completed Successfully")
