@@ -44,8 +44,15 @@ It performs:
 
 1. Clone the repository 
 2. Create virtual environment: python -m venv venv 
-3. Activate: venv\Scripts\activate (Windows) 
-             source venv/bin/activate (Linux/Mac)
+3. Activate the virtual environment:
+
+```bash
+# Windows
+venv\Scripts\activate
+
+# Linux / Mac
+source venv/bin/activate
+```
 4. Install dependencies: pip install -r requirements.txt 
 5. Run locally: pytest -v -s test_elpais.py
 
