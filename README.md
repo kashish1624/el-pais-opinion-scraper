@@ -45,8 +45,9 @@ It performs:
 1. Clone the repository 
 2. Create virtual environment: python -m venv venv 
 3. Activate: venv\Scripts\activate (Windows) 
+             source venv/bin/activate (Linux/Mac)
 4. Install dependencies: pip install -r requirements.txt 
-5. Run locally: python main.py 
+5. Run locally: pytest -v -s test_elpais.py
 
 ---
 
@@ -58,6 +59,7 @@ It performs:
 ```bash
 setx BROWSERSTACK_USERNAME "your_username"
 setx BROWSERSTACK_ACCESS_KEY "your_access_key"
+setx BROWSERSTACK_HUB_URL "https://hub.browserstack.com/wd/hub"
 ```
 
 Restart terminal after setting.
@@ -67,10 +69,11 @@ Restart terminal after setting.
 ### 2️⃣ Run with BrowserStack SDK
 
 ```bash
-browserstack-sdk python main.py
+browserstack-sdk pytest -v test_elpais.py
 ```
 
 This runs tests in parallel threads as configured in `browserstack.yml`.
+
 
 ---
 
