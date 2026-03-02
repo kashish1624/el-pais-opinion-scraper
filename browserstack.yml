@@ -3,6 +3,11 @@ accessKey: ${BROWSERSTACK_ACCESS_KEY}
 
 framework: pytest
 
+buildName: ElPais Assignment Build
+projectName: ElPais Opinion Scraper
+
+parallelsPerPlatform: 1
+
 platforms:
   - os: Windows
     osVersion: 11
@@ -15,19 +20,12 @@ platforms:
     browserVersion: latest
 
   - os: OS X
-    osVersion: Ventura
+    osVersion: Sonoma
     browserName: Safari
     browserVersion: latest
 
-  - deviceName: iPhone 14
-    osVersion: 16
-    realMobile: true
-
-  - deviceName: Samsung Galaxy S22
-    osVersion: 13
-    realMobile: true
-
-parallelsPerPlatform: 1
 browserstackLocal: false
-buildName: ElPais Assignment Build
-projectName: ElPais Opinion Scraper
+
+debug: true
+networkLogs: true
+consoleLogs: info
